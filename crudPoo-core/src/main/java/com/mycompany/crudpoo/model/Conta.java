@@ -26,31 +26,30 @@ public class Conta implements Serializable {
 
     @Column(name = "valor", nullable = false, precision = 10, scale = 2)
     private Double valor;
-    
+
     @Temporal(TemporalType.DATE)
     @Column(name = "data_lancamento", nullable = false)
     private Date dataLancamento;
-    
+
     @Temporal(TemporalType.DATE)
     @Column(name = "data_pagamento", nullable = false)
     private Date dataPagamento;
-    
+
     @Temporal(TemporalType.DATE)
     @Column(name = "data_vencimento", nullable = false)
     private Date dataVencimento;
-    
+
     @Column(name = "descricao", nullable = false, length = 100)
     private String descricao;
-    
+
     @ManyToOne
     @Column(name = "person_id")
     private Pessoa person;
-    
+
     @Enumerated(EnumType.STRING)
     @Column(name = "tipo_conta", nullable = false)
     private EnumTipoConta tipoConta;
 
-    
     public Long getId() {
         return id;
     }
@@ -114,8 +113,7 @@ public class Conta implements Serializable {
     public void setTipoConta(EnumTipoConta tipoConta) {
         this.tipoConta = tipoConta;
     }
-    
-    
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -139,5 +137,5 @@ public class Conta implements Serializable {
     public String toString() {
         return "com.mycompany.crudpoo.model.Conta[ id=" + id + " ]";
     }
-    
+
 }

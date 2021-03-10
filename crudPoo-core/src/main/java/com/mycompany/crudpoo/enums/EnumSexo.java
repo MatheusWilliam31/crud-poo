@@ -1,14 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.crudpoo.enums;
 
-/**
- *
- * @author matheus_loose
- */
 public enum EnumSexo {
-    
+    MASCULINO("Sexo Masculino"),
+    FEMININO("Sexo Femenino");
+
+    private EnumSexo(String discricao) {
+
+        this.discricao = discricao;
+    }
+    private String discricao;
+
+    public String getDiscricao() {
+        return discricao;
+    }
+
+    @Override
+    public String toString() {
+        return discricao;
+    }
+
 }

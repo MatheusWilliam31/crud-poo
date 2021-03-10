@@ -1,4 +1,3 @@
-
 package com.mycompany.crudpoo.model;
 
 import com.mycompany.crudpoo.enums.EnumSexo;
@@ -15,7 +14,6 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-
 @Entity
 @Table(name = "pessoa")
 public class Pessoa implements Serializable {
@@ -24,24 +22,24 @@ public class Pessoa implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    
+
     @Column(name = "name", length = 180, nullable = false)
     private String name;
-    
-    @Column(name = "cpf", length = 14, nullable = false, unique = true) 
+
+    @Column(name = "cpf", length = 14, nullable = false, unique = true)
     private String cpf;
-    
+
     @Temporal(TemporalType.DATE)
     @Column(name = "data_nascimeno", nullable = false)
     private Date dataNascimento;
-    
+
     @Column(name = "telefone", length = 14, nullable = false)
     private String telefone;
-    
+
     @Enumerated(EnumType.STRING)
     @Column(name = "sexo")
     private EnumSexo sexo;
-    
+
     @Column(name = "person_active")
     private Boolean pessoaAtiva;
 
@@ -101,7 +99,6 @@ public class Pessoa implements Serializable {
         this.pessoaAtiva = pessoaAtiva;
     }
 
-    
     @Override
     public int hashCode() {
         int hash = 0;
@@ -126,5 +123,5 @@ public class Pessoa implements Serializable {
     public String toString() {
         return "com.mycompany.crudpoo.model.Pessoa[ id=" + id + " ]";
     }
-    
+
 }
