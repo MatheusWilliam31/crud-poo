@@ -1,0 +1,14 @@
+Wed Mar 10 13:00:39 BRT 2021 : Apache Derby Servidor de Rede - 10.13.1.1 - (Unversioned directory) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+----------------------------------------------------------------
+Wed Mar 10 13:00:39 BRT 2021:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.13.1.1 - (Unversioned directory): instância a816c00e-0178-1cde-6109-00003a45a4d6
+no diretório de banco de dados /home/matheus_loose/NetBeansProjects/db_crud 
+
+java.vendor=Oracle Corporation
+java.runtime.version=11.0.8+10-LTS
+user.dir=/home/matheus_loose/Área de Trabalho/glassfish5/javadb
+os.name=Linux
+os.arch=amd64
+os.version=5.8.0-44-generic
+derby.system.home=/home/matheus_loose/NetBeansProjects
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
